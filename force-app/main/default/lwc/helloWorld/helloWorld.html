@@ -1,0 +1,35 @@
+<template>
+
+    <lightning-card variant="Narrow" title="Panther" icon-name="doctype:video">
+        <lightning-button icon-name="utility:down" label="Click Me" value="Click Me" slot="actions"></lightning-button>
+        <div class="slds-m-around_large ">
+            <h1 class="slds-text-align_center slds-text-heading_large"> {courseName} </h1><br/>
+            <p class="slds-text-heading_medium slds-align_absolute-center"> {objective}</p><br/>
+            <p class="slds-text-heading_small slds-align_absolute-center">
+                {address.hNo},
+                {address.street},
+                {address.city},
+                {address.state},
+                {address.countary}
+            </p> <br/>
+            <p>{apexMessage}</p>
+            <div lwc:if={error}>
+                <span style="color:red">{error}</span>
+            </div>
+
+            
+
+            <!--
+            <div class="slds-text-heading_medium slds-align_absolute-center" lwc:if={apexData.data}>
+                {apexData.data}
+            </div>
+            <div lwc:else>
+                <span style="color:red">{apexData.error}</span>
+            </div> -->
+        </div>
+        <div slot="footer">
+            <a href="https://www.google.com" target="_blank">Mubarak.husain</a>
+        </div>
+    </lightning-card>
+
+</template>

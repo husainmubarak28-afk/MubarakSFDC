@@ -1,0 +1,11 @@
+body{
+	font-family: 'Times New Roman', Times, serif;
+}
+
+.container{
+	background-color:aquamarine;}
+
+.contact-item{
+	margin: 20px;
+	padding: 20px;
+}

@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+	<isExposed>true</isExposed>
+	<masterLabel>Hello World</masterLabel>
+	<description>The purpose of this component is to display the Hello World</description>
+	<apiVersion>66.0</apiVersion>
+	<targets>
+		<target>lightning__AppPage</target>
+		<target>lightning__HomePage</target>
+	</targets>
+</LightningComponentBundle>

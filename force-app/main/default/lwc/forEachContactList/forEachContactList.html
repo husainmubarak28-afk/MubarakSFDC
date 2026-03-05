@@ -1,0 +1,35 @@
+<template>
+
+    <lightning-card variant="Narrow" title="Contacts" icon-name="standard:contact">
+        <div class="slds-m-around_large ">
+            <template if:true={contactList}  for:each={contactList} for:item="con" for:index="index">
+                <div class="contact-item" key={con.id}>
+                    {con.id} &nbsp; <br/> {con.first} &nbsp; {con.last} <br/>
+                    <lightning-formatted-email value={con.email}></lightning-formatted-email><br/>
+                    <lightning-formatted-phone value={con.phone}></lightning-formatted-phone> <br/>
+                    {con.sex} <br/>
+                   <p if:true={con.address}> Address=: {con.address.street}</p> 
+                   <p lwc:if={con.address}>{con.address.city}, {con.address.state}, {con.address.postalCode} </p> 
+                   <p lwc:else>No Address Found</p>
+                </div>
+            </template>
+        </div>
+        <div slot="footer">
+            <a href="https://www.google.com" target="_blank">Mubarak.husain</a>
+        </div>
+    </lightning-card>
+
+</template>
+<!--
+<p if:true={con.address}>  // if:false
+    {con.address.street}
+    </p>
+
+    <p lwc:if={con.address}>
+      {con.address.street}
+    </p>
+
+    <p lwc:elseif={con.address1}>
+      {con.address.street}
+    </p>
+     -->
