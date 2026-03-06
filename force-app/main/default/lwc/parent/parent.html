@@ -1,0 +1,12 @@
+<template>
+    <lightning-card title="Parent Component">
+        <div class="slds-m-around_medium">
+            <lightning-input
+                label="Message to send to child"
+                value={messageToSend}
+                onchange={handleChange}
+            ></lightning-input>
+            <c-child message={messageToSend}></c-child>
+        </div>
+    </lightning-card>
+</template>
