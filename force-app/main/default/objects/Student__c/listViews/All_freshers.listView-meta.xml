@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All_freshers</fullName>
+    <columns>NAME</columns>
+    <columns>Name__c</columns>
+    <columns>Class__c</columns>
+    <columns>Age__c</columns>
+    <columns>Email__c</columns>
+    <columns>Mobile_Number__c</columns>
+    <columns>Salesforce_Role__c</columns>
+    <filterScope>Mine</filterScope>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Student__c.Fresher</value>
+    </filters>
+    <label>All freshers</label>
+</ListView>

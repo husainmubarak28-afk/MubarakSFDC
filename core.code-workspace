@@ -1,0 +1,19 @@
+{
+  "folders": [
+    {
+      "path": "/home/codespace/pantherSFDC"
+    }
+  ],
+  "settings": {
+    "eslint.workingDirectories": [
+      "/home/codespace/pantherSFDC"
+    ],
+    "eslint.validate": [
+      "javascript",
+      "typescript"
+    ],
+    "eslint.options": {
+      "overrideConfigFile": "/home/codespace/pantherSFDC/.eslintrc.json"
+    }
+  }
+}

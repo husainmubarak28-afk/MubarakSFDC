@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Open_Positions</fullName>
+    <columns>NAME</columns>
+    <columns>Open_Date__c</columns>
+    <columns>Close_Date__c</columns>
+    <columns>Days_Open__c</columns>
+    <columns>Functional_Area__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Status__c</field>
+        <operation>equals</operation>
+        <value>New Position,Pending Approval,Open - Approved</value>
+    </filters>
+    <label>Open Positions</label>
+</ListView>

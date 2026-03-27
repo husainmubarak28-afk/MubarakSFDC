@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Enterance_Score_Should_Not_be_Null</fullName>
+    <active>true</active>
+    <errorConditionFormula>ISBLANK(Enterance_Score__c ) &amp;&amp;   RecordType.DeveloperName  == &apos;Fresher&apos;</errorConditionFormula>
+    <errorMessage>Please populate Entrance Score</errorMessage>
+</ValidationRule>
